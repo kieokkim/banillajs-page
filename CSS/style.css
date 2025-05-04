@@ -1,0 +1,150 @@
+.hidden {
+    display: none;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+body {
+    font-family: 'Noto Sans KR';      
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    min-height: 600px;
+    width: 90%;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* ✅ 그림자 효과 */
+}
+  
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+  
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#login-form input,
+#todo-form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#todo-list {
+    max-height: 400px;
+    overflow-y: auto;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#todo-form,
+#todo-list {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#todo-list li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 16px; /* 좌우 여백 동일하게! */
+    border-radius: 8px;
+    margin-bottom: 8px;
+    word-break: break-word;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 0.3s ease; /* ✅ 부드러운 전환 */
+}
+
+#todo-list li button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+background-color: rgba(255, 255, 255, 0.4);
+border-radius: 10px;
+}
+
+body, h1, h2, input, li, span {
+color: white;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+#quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+    color: white;
+}
+
+#weather {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    text-align: right;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #f0f0f0;
+}
+  
